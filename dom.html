@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .blog{
+            border: 2px solid saddlebrown ;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome my Blog Wevsite</h1>
+    </header>
+    <main>
+        <section id="my_blog">
+            <article class="blog">
+                <h3>My blog1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo facere, itaque beatae
+                    assumenda eum voluptatibus odio provident possimus impedit dolore explicabo nulla laborum non ea.
+                    Autem in ratione a?</p>
+            </article>
+            <article class="blog">
+                <h3>My blog2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo facere, itaque beatae
+                    assumenda eum voluptatibus odio provident possimus impedit dolore explicabo nulla laborum non ea.
+                    Autem in ratione a?</p>
+            </article>
+            <article class="blog">
+                <h3>My blog3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo facere, itaque beatae
+                    assumenda eum voluptatibus odio provident possimus impedit dolore explicabo nulla laborum non ea.
+                    Autem in ratione a?</p>
+            </article>
+            <article class="blog">
+                <h3>My blog4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo facere, itaque beatae
+                    assumenda eum voluptatibus odio provident possimus impedit dolore explicabo nulla laborum non ea.
+                    Autem in ratione a?</p>
+            </article>
+        </section>
+    </main>
+    <script>
+        const article = document.createElement('article');
+        article.classList.add('blog');
+        const h3 = document.createElement('h3');
+        h3.innerText = 'My blog5';
+        const p = document.createElement('p');
+        p.innerText = 'orem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo facere, itaque beatae assumenda eum voluptatibus odio provident possimus impedit dolore explicabo nulla laborum non ea. Autem in ratione a?';
+
+        article.appendChild(h3);
+        article.appendChild(p);
+
+        const blogs = document.getElementById('my_blog');
+        blogs.appendChild(article);
+
+        const singleBlog = document.getElementsByClassName('blog');
+        for (const myBlog of singleBlog) {
+            myBlog.style.border = '2px solid red';
+            myBlog.style.borderRadius = '10px';
+            myBlog.style.margin = '5px';
+            myBlog.style.padding = '5px';
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
